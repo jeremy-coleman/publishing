@@ -1,0 +1,12 @@
+To avoid problems with HMR settings set your development server config before you define further bundle configuration
+
+for Computed resolve errors see:  
+see https://fuse-box.org/page/quantum-configuration#computed-statement-resolution  
+IE:
+```javascript
+QuantumPlugin({
+    api: (core) => {
+        core.solveComputed("encoding/lib/iconv-loader.js");
+    }
+})
+```
