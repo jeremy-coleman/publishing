@@ -1,5 +1,7 @@
 
 ##TLDR  
+plugins: [[SassPlugin({importer : true}), CSSPlugin()] -> @import '~bootstrap/dist/css/bootstrap.css'; (~=node_modules)  
+
 example plugin config
 ```javascript
   plugins: [
