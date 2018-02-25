@@ -1,0 +1,49 @@
+
+##TLDR  
+example plugin config
+```javascript
+  plugins: [
+                [SassPlugin({importer : true}), CSSPlugin()],
+                CSSPlugin(),
+                SVGPlugin(),
+                WebIndexPlugin({template : "src/app/index.html"}),
+                this.isProduction && QuantumPlugin({
+                    bakeApiIntoBundle: "app",
+                    uglify: true,
+                    css : true
+                })
+            ]
+```
+##Explanation  
+
+##Enabling outside imports
+such as:  
+
+in app.scss 
+```css
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.App {
+    text-align: center;
+}
+```
+
+fusebox gives u 3 macros as default  
+$homeDir = home directory
+$appRoot = app root
+~ = node_modules
+
+EX:  
+@import '$homeDir/test2.scss';  
+@import '$appRoot/src/test.scss';  
+@import '~bootstrap/dist/bootstrap.css';  
+
+example override:  
+plugins: [  
+    [ SassPlugin({ importer : true, macros: { "$homeDir": "custom/dir/" }}), CSSPlugin() ]  
+]  
+
+
+
+
+
