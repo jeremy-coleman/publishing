@@ -9,10 +9,10 @@ coglite@outlook.com (or official) idk
 then..
 
 npm publish --access public
-(i think public flag is only required for first pkg)
+(i think public flag is only required for first pkg)  
 
 
-javascript```
+```javascript
 const argv = require('yargs').argv
 const shelljs = require('shelljs')
 const {promisify} = require('util')
