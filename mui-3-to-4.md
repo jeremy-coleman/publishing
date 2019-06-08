@@ -1,3 +1,4 @@
+```text
 display4 => h1
 display3 => h2
 display2 => h3
@@ -7,3 +8,4 @@ title => h6
 subheading => subtitle1
 body2 => body1
 body1 (default) => body2 (default)
+```
