@@ -9,3 +9,5 @@ subheading => subtitle1
 body2 => body1
 body1 (default) => body2 (default)
 ```
+
+flat and raised are deprecated. Instead use text and contained
